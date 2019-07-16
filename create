@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+FILE=${1?Error: project name not given}
+# LANGUAGE=${2?Error: language you would like to use is not given}
+cd
+python3 /home/david/projects/python/AutomatingProjects/create_github.py $FILE
+
+cd /home/david/projects/python/
+mkdir $FILE
+
+echo "$FILE repository was created and folder was created"
