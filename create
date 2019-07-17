@@ -2,10 +2,16 @@
 
 FILE=${1?Error: project name not given}
 # LANGUAGE=${2?Error: language you would like to use is not given}
+PUB_PRIV=${2?Error: no private or public option given}
 cd
-python3 /home/david/projects/python/AutomatingProjects/create_github.py $FILE
+python3 #enter the path to where the create_github.py is located followed by $FILE $PUB_PRIV
 
 cd /home/david/projects/python/
-mkdir $FILE
+#enter the clone command for github with the $FILE inplace of where the
+#repository name should be
+git clone https://github.com/DavidLBallard/$FILE.git
 
-echo "$FILE repository was created and folder was created"
+echo "[*]$FILE repository was created and folder was created[*]"
+echo "[*]Atom is opening for you[*}]"
+cd $FILE
+atom .
