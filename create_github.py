@@ -11,11 +11,11 @@ pub_priv = sys.argv[2]
 
 
 # sets username and password from enviroment variables
-user = '' #Enter your username
-pwd = ''  #Enter your password
+user = 'DavidLBallard'
+pwd = 'HardWork88DLB'
 
 # sets the chromedriver
-CHROMEDRIVER = #Enter the path to where you have your chrome driver here
+CHROMEDRIVER = '/home/david/projects/python/AutomatingProjects/chromedriver'
 # initalizes the driver and sets the webpage
 driver = webdriver.Chrome(CHROMEDRIVER)
 driver.get('https://github.com/login')
